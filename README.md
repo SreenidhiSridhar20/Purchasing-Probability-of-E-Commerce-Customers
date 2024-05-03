@@ -24,14 +24,14 @@ Figure 1: Descriptive Statistics<br>
 <h2>Method of Analysis:</h2>
 <p>The method of analysis starts with the assumptions of the model. The assumptions are made based on the pairwise scatter plot Figure 3. From the pairwise scatter plot we see that the data points are normally distributed and there are no potential outliers which means that the variance is constant. Also, the variables are highly correlated with each other. The null hypothesis for this problem is that the Yearly Amount Spent is affected by none of the variables and the alternative hypothesis is that at least one of the four variables affect the Yearly Amount Spent. Performing the correlation matrix will show which variables are highly correlated. Figure 2 displays the frequency of yearly amount spent through a histogram.</p>
  
-<img src="Results/Fig2_stat.jpg" height="50%" width="50%">Figure 2: Histogram - Yearly Amount Spent Vs Frequency
-<img src="Results/Fig3_stat.jpg" height="50%" width="50%">Figure 3: Pairwise Scatter Plot
+<img src="Results/Fig2_stat.jpg" height="50%" width="50%"><br>Figure 2: Histogram - Yearly Amount Spent Vs Frequency<br>
+<img src="Results/Fig3_stat.jpg" height="50%" width="50%"><br>Figure 3: Pairwise Scatter Plot<br>
 
 <p>From the correlation table Figure 4 we can see that the Yearly Amount Spent and Length of Membership are highly correlated. With that information, the regression equation for Yearly Amount Spent with all the four independent variables is Figure 5. For the regression equation in Figure 5 the ANOVA table is given in Figure 6.</p>
 
-<img src="Results/Fig4_stat.jpg" height="50%" width="50%">Figure 4: Correlation Matrix
-<img src="Results/Fig5_stat.jpg" height="50%" width="50%">Figure 5: Initial Regression Equation
-<img src="Results/Fig6_stat.jpg" height="50%" width="50%">Figure 6: ANOVA
+<img src="Results/Fig4_stat.jpg" height="50%" width="50%"><br>Figure 4: Correlation Matrix<br>
+<img src="Results/Fig5_stat.jpg" height="50%" width="50%"><br>Figure 5: Initial Regression Equation<br>
+<img src="Results/Fig6_stat.jpg" height="50%" width="50%"><br>Figure 6: ANOVA<br>
 
 <p>Lastly, upon performing influence analysis using leverage points, Cook’s Distance and DFFITS, we utilized the leverage points and removed few data points(as per Cook’s Distance and DFFITS). This made our final model robust with optimal solutions.</p>
 <p>There are a few methods for performing variable selection, and one is to incrementally fit models with higher and higher order terms until the t test for the highest order term is nonsignificant. The method is known as forward selection. With the three independent variables average session length, time spent using the app, and membership length, we are able to select the optimal model looking forth to determine the annual amount spent.</p>
@@ -39,22 +39,35 @@ Figure 1: Descriptive Statistics<br>
 <h2>Results:</h2>
 <p>Based on our analysis from the previous section, the final regression equation is mentioned in Figure 7.</p>
 
-<img src="Results/Fig7_stat.jpg" height="50%" width="50%">Figure 7: Final Regression Equation
-<img src="Results/Fig8_stat.jpg" height="50%" width="50%">Figure 8: Final Coefficient Table
+<img src="Results/Fig7_stat.jpg" height="50%" width="50%"><br>Figure 7: Final Regression Equation<br>
+<img src="Results/Fig8_stat.jpg" height="50%" width="50%"><br>Figure 8: Final Coefficient Table<br>
 
 <p>From the Coefficient table in Figure 8, we observe that P-value is less than the significance level of 0.5. Thus, we accept the alternate hypothesis that the response variable is dependent on at least one of the predictor variables. In our case, the response variable (yearly amount spent) is dependent on ‘Length of Membership’, ‘Average Session Length’ and ‘Time on App’.</p>
 
-<img src="Results/Fig9_stat.jpg" height="50%" width="50%">Figure 9: Residual Plot
+<img src="Results/Fig9_stat.jpg" height="50%" width="50%"><br>Figure 9: Residual Plot<br>
 
 <p>From the residual plot Figure 9, we deduce that the least squares regression line lies exactly along a straight line, indicating normal distribution. Also all the variables are independent as there is no multicollinearity observed from the Correlation matrix and the VIF values.</p>
 
-<img src="Results/Fig10_stat.jpg" height="50%" width="50%">Figure 10: Model Summary
+<img src="Results/Fig10_stat.jpg" height="50%" width="50%"><br>Figure 10: Model Summary<br>
 
 <p>After performing all the analysis steps which includes hypothesis testing, variable assump- tion and independence, multicollinearity verification, variable selection; we arrive at the best model for this problem and dataset.</p>
 
-<img src="Results/Fig11_stat.jpg" height="50%" width="50%">Figure 11: Confidence and Prediction Bands
+<img src="Results/Fig11_stat.jpg" height="50%" width="50%"><br>Figure 11: Confidence and Prediction Bands<br>
 
 <p>98.42% variability of ‘Yearly Amount Spent’ can be explained by Adjusted R-square value from the model summary table. The final coefficients table (Figure 8) shows that, when all other factors are held constant, a one-unit increase in average session length corresponds to a 25.721 increase in total spending. Holding all other aspects constant, an increase of 1 unit in Time on App results in an increase of 38.746 dollars in total expenditures. Keeping all other parameters constant, a 1 unit increase in Length of Membership corresponds to an increase in total spending of 61.556 dollars. The confidence and prediction bands for time spent on app versus annual amount spent are shown in the figure 11.</p>
+
+<h2>Results Screenshots from Minitab:</h2>
+<img src="Results/Fig12_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig13_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig14_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig15_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig16_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig17_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig18_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig19_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig20_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig21_stat.jpg" height="50%" width="50%">
+<img src="Results/Fig22_stat.jpg" height="50%" width="50%">
 
 <h2>Conclusion:</h2>
 <p>We determine for an e-commerce company whether to concentrate their efforts on their mobile app experience or their website based on the findings of the performed linear regression. The data description makes it apparent that the user might gather all the information required to make a buying decision during one visit, and then make the actual purchase at a subsequent, shorter visit.</p>
